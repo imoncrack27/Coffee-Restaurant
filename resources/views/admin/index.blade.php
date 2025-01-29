@@ -1,20 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+<html>
+  <head> 
+   @include('admin.css')
+  </head>
+  <body>
     
+    
+        @include('admin.header')
+  
+        @include('admin.sidebar')
 
-<h1>Hello Admin</h1>
 
-<form method="POST" action="{{ route('logout') }}" >
-                                @csrf
+      <div class="page-content">
+        <div class="page-header">
+          <div class="container-fluid">
 
-                             <input type="submit" value="Logout">
-                          
-                            </form>
-</body>
+            @include('admin.body')
+
+           </div>
+      </div>
+    </div>
+    <!-- JavaScript files-->
+    @include('admin.js')
+  </body>
 </html>
