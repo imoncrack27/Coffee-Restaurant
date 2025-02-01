@@ -11,7 +11,7 @@
                     <a class="nav-link" href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#gallary">Gallary</a>
+                    <a class="nav-link" href="#gallary">Gallery</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#book-table">Book-Table</a>
