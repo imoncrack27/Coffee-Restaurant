@@ -26,10 +26,10 @@
                     <a class="nav-link" href="#blog">Blog<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#testmonial">Reviews</a>
+                    <a class="nav-link" href="{{route('login')}}">Login</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact Us</a>
+                    <a class="nav-link" href="{{route('register')}}">Register</a>
                 </li>
                 <li class="nav-item">
                     <a href="components.html" class="btn btn-primary ml-xl-4">Components</a>
