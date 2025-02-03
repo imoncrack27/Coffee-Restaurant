@@ -29,7 +29,7 @@
         <div class="page-header">
           <div class="container-fluid">
 
-           <form action="" method="post">
+           <form action="{{ url('upload_food') }}" method="post">
 
             @csrf
 
