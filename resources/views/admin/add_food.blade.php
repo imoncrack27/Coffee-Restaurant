@@ -36,28 +36,28 @@
             <div class="div_deg">
 
             <label for="">Food Title</label>
-            <input type="text" name="title">
+            <input type="text" name="title" required>
 
             </div>
                 
             <div class="div_deg">
 
             <label for="">Food Details</label>
-            <textarea name="details" cols="50" rows="5"></textarea>
+            <textarea name="details" cols="50" rows="5" required></textarea>
 
             </div>
 
             <div class="div_deg">
 
             <label for="">Price</label>
-            <input type="text" name="price">
+            <input type="text" name="price" required>
 
             </div>
 
             <div class="div_deg">
 
             <label for="">Image</label>
-            <input type="file" name="img">
+            <input type="file" name="img" required>
 
 </div>
 
