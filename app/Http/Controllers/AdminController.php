@@ -41,7 +41,8 @@ class AdminController extends Controller
     public function view_food()
     
     {
-        return view ('admin.show_food');
+        $data = Food::all();
+        return view ('admin.show_food', compact('data'));
 
     }
 
