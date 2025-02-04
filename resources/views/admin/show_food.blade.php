@@ -49,13 +49,19 @@
 
                     </tr>
 
+                    @foreach($data as $data)
+
                     <tr>
-                        <td>Abc</td>
-                        <td>abc</td>
-                        <td>abc</td>
-                        <td>abc</td>
+                        <td>{{ $data->title }}</td>
+                        <td>{{ $data->detail }}</td>
+                        <td>{{ $data->price }}</td>
+                        <td>
+                            <img wdith="150" src="food_img/{{ $data->image }}" alt="">
+                        </td>
 
                     </tr>
+
+                    @endforeach
                 </table>
             </div>
 
