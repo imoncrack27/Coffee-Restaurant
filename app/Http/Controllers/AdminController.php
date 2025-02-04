@@ -46,4 +46,9 @@ class AdminController extends Controller
 
     }
 
+    public function delete_food($id)
+    {
+        return view ('admin.delete_food', compact('id'));
+    }
+
 }

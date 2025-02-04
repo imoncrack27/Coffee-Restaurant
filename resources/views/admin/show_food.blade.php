@@ -46,7 +46,7 @@
                         <th>Details</th>
                         <th>Price</th>
                         <th>Image</th>
-
+                        <th>Delete</th>
                     </tr>
 
                     @foreach($data as $data)
@@ -58,7 +58,10 @@
                         <td>
                             <img wdith="150" src="food_img/{{ $data->image }}" alt="">
                         </td>
-
+                        
+                        <td>
+                            <a class="btn btn-danger" onclick="return confirm('Are you sure to delete this?')" href="{{url('delete_food', $data->id) }}">Delete</a>
+                        </td>
                     </tr>
 
                     @endforeach
