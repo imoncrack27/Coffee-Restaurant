@@ -37,4 +37,12 @@ class AdminController extends Controller
         return redirect()->back();
 
     }
+
+    public function view_food()
+    
+    {
+        return view ('admin.show_food');
+
+    }
+
 }
