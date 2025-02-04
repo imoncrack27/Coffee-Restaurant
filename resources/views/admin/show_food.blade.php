@@ -56,7 +56,7 @@
                         <td>{{ $data->detail }}</td>
                         <td>{{ $data->price }}</td>
                         <td>
-                            <img wdith="150" src="food_img/{{ $data->image }}" alt="">
+                            <img width="150" src="food_img/{{ $data->image }}" alt="">
                         </td>
                         
                         <td>
