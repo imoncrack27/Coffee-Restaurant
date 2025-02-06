@@ -71,10 +71,20 @@ class AdminController extends Controller
         $data->title = $request->title;
         $data->detail = $request->details;
         $data->price = $request->price;
+
+        $image = $request->image;
+
+        if($image)
+        {
+            $imagename=time().'.'.$image->getClientOriginalExtension();
+
+            $request->image->move('food_img',$imagename );
+            $data->image = $imagename;
+        }
         
         $data->save();
 
-        return redirect()->back();
+        return redirect('view_food');
 
 
     }
