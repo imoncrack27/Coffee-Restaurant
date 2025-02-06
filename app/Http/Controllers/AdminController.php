@@ -64,4 +64,19 @@ class AdminController extends Controller
         
     }
 
+    public function edit_food(Request $request,$id)
+    {
+        $data = Food::find($id);
+
+        $data->title = $request->title;
+        $data->detail = $request->details;
+        $data->price = $request->price;
+        
+        $data->save();
+
+        return redirect()->back();
+
+
+    }
+
 }
