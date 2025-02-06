@@ -57,7 +57,10 @@ class AdminController extends Controller
     {
    #     $data = Food::find($id);
    #     $data->update();
-        return view('admin.update_food');
+
+
+        $food = Food::find($id);
+        return view('admin.update_food', compact('food'));
         
     }
 
