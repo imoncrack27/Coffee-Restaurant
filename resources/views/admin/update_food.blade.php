@@ -31,7 +31,11 @@
 
             <h1>Update Food</h1>
 
-            <form action="">
+            <form action="{{ url('edit_food', $food->id) }}" method="post" enctype="multipart/form-data">
+
+                @csrf
+
+
                 <div class="div_deg">
                     <label for="">Food Title</label>
                     <input type="text" name="title" value="{{ $food->title }}">
@@ -40,13 +44,30 @@
                 <div class="div_deg">
                     <label for="">Details</label>
 
-                    <textarea name="details" id="" cols="30" rows="10">{{ $food->detail }}</textarea>
+                    <textarea name="details" id="" >{{ $food->detail }}</textarea>
                     
                 </div>
 
                 <div class="div_deg">
                     <label for="">Price</label>
                     <input type="text" name="price" value="{{ $food->price }}">
+                </div>
+
+                <div class="div_deg">
+                    <label for="">Current Image</label>
+                    <img width="150" src="food_img/{{ $food->image }}" alt="">
+                    
+                </div>
+
+                <div class="div_deg">
+                    <label for="">Change Image</label>
+                    <input type="file" name="image">
+                    
+                </div>
+
+                <div class="div_deg">
+                 <input class="btn btn-warning" type="submit" value="Update Food">
+                    
                 </div>
             </form>
 
