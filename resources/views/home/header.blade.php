@@ -18,8 +18,12 @@
                 </li>
             </ul>
             <a class="navbar-brand m-auto" href="#">
-                <img src="assets/imgs/logo.svg" class="brand-img" alt="">
-                <span class="brand-txt">Food Hut</span>
+                <img src="assets/imgs/Andrew's Pizza - Logo.png" class="brand-img" alt="">
+                <span class="brand-txt">Cafe Inez & Andrew's Pizza</span>
+            </a>
+            <a class="navbar-brand m-auto" href="#">
+                <img src="assets/imgs/Cafe Inez Logo-Photoroom.png" class="brand-img" alt="">
+                <span class="brand-txt">Cafe Inez & Andrew's Pizza</span>
             </a>
             <ul class="navbar-nav">
                 <li class="nav-item">
@@ -54,8 +58,8 @@
     <!-- header -->
     <header id="home" class="header">
         <div class="overlay text-white text-center">
-            <h1 class="display-2 font-weight-bold my-3">Food Hut</h1>
+            <h1 class="display-2 font-weight-bold my-3">Cafe Inez & Andrew's Pizza</h1>
             <h2 class="display-4 mb-5">Always fresh &amp; Delightful</h2>
-            <a class="btn btn-lg btn-primary" href="#gallary">View Our gallary</a>
+            <a class="btn btn-lg btn-primary" href="#gallary">View Our gallery</a>
         </div>
     </header>
