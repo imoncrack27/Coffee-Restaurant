@@ -47,12 +47,14 @@ class HomeController extends Controller
 
     public function add_cart(Request $request, $id)
     {
-        $food = Food::find($id);
+        if(Auth::id())
+        {
+            echo "user is logged in";
+        }
 
-        $user = User::find(Auth::id());
-
-        $user->foods()->attach($food);
-
-        return redirect()->back();
+        else
+        {
+            return redirect("login");
+        }
     }
 }
