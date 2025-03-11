@@ -16,6 +16,8 @@ use App\Models\Cart;
 
 use Illuminate\Support\Facades\Auth;
 
+use Illuminate\Support\Str;
+
 class HomeController extends Controller
 {
 
@@ -58,7 +60,7 @@ class HomeController extends Controller
 
            $cart_details = $food->detail;
 
-           $cart_price = $food->price;
+           $cart_price = Str::remove('P',$food->price);
 
            $cart_image = $food->image;
 
@@ -68,7 +70,7 @@ class HomeController extends Controller
 
            $data->details = $cart_details;
 
-           $data->price = $cart_price;
+           $data->price = $cart_price * $request->qty;
 
            $data->image = $cart_image;
 
