@@ -44,4 +44,15 @@ class HomeController extends Controller
             }
         }
 }
+
+    public function add_cart(Request $request, $id)
+    {
+        $food = Food::find($id);
+
+        $user = User::find(Auth::id());
+
+        $user->foods()->attach($food);
+
+        return redirect()->back();
+    }
 }
