@@ -110,13 +110,16 @@
                 <th>Quantity</th>
                 <th>Image</th>
             </tr>
-            <tr>
-                <td>ABCD</td>
-                <td>ABCD</td>
-                <td>ABCD</td>
-                <td>ABCD</td>
 
+            @foreach($data as $data)
+            <tr>
+                <td>{{ $data->title }}</td>
+                <td>{{ $data->price }}</td>
+                <td>{{ $data->quantity }}</td>
+                <td><img width="150" src="food_img/{{ $data->image }}" alt=""></td>
             </tr>
+
+            @endforeach
         </table>
 
     </div>

@@ -99,6 +99,6 @@ class HomeController extends Controller
 
         $data = Cart::where('userid', '=', $user_id)->get();
 
-        return view('home.my_cart');
+        return view('home.my_cart', compact('data'));
     }
 }
