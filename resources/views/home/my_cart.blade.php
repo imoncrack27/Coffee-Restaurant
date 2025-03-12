@@ -112,17 +112,32 @@
                 <th>Remove</th>
             </tr>
 
+            <?php
+            
+            $total_price = 0;
+            
+            ?>
+
             @foreach($data as $data)
             <tr>
                 <td>{{ $data->title }}</td>
                 <td>P{{ $data->price }}</td>
                 <td>{{ $data->quantity }}</td>
                 <td><img width="150" src="food_img/{{ $data->image }}" alt=""></td>
-                <td><a class="btn btn-danger" href="{{ url('remove_cart',$data->id) }}">Remove</a></td>
+                <td><a onclick="return confirm('Are you sure to remove this?')" class="btn btn-danger" href="{{ url('remove_cart',$data->id) }}">Remove</a></td>
             </tr>
+
+            <?php 
+            
+            $total_price = $total_price + $data->price;
+            
+            ?>
+
 
             @endforeach
         </table>
+
+        <h3>Total Price of the Cart P{{ $total_price }}</h3>
 
     </div>
 
