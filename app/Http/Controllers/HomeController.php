@@ -9,6 +9,8 @@ use App\Models\User;
 
 use App\Models\Food;
 
+use App\Models\Order;
+
 use App\Models\Cart;
 
 
@@ -110,4 +112,41 @@ class HomeController extends Controller
 
         return redirect()->back();
     }
+
+    public function confirm_order(Request $request)
+
+    {
+        $user_id = Auth()->user()->id;
+
+        $cart = Cart::where('userid', '=', $user_id)->get();
+
+        foreach($cart as $cart)
+        {
+
+            $order = new Order;
+
+            $order->name = $request->name;
+
+            $order->email = $request->email;
+
+            $order->phone = $request->phone;
+
+            $order->address = $request->address;
+
+            $order->title = $cart->title;
+
+            $order->quantity = $cart->quantity;
+
+            $order->price = $cart->price;
+
+            $order->image = $cart->image;
+
+            $order->save();
+
+
+
+        }
+    }
+
+
 }
