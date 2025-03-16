@@ -143,6 +143,10 @@ class HomeController extends Controller
 
             $order->save();
 
+            $data = Cart::find($cart->id);
+
+            $data->delete();
+
 
 
         }
