@@ -7,6 +7,9 @@ use Illuminate\Http\Request;
 
 use App\Models\Food;
 
+use App\Models\Order;
+
+
 class AdminController extends Controller
 {
     public function add_food()
@@ -91,7 +94,8 @@ class AdminController extends Controller
 
     public function orders()
     {
-        return view('admin.order');
+        $data = Order::all();
+        return view('admin.order', compact('data'));
     }
 
 }
