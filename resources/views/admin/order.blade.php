@@ -55,6 +55,8 @@
                     <th>Price</th>
                     <th>Image</th>
                     <th>Status</th>
+
+                    <th>Change Status</th>
                 </tr>
                 @foreach($data as $data)
                 <tr>
@@ -69,6 +71,13 @@
                         <img width="100" src="food_img/{{ $data->image }}" alt="">
                     </td>
                     <td>{{ $data->delivery_status }}</td>
+
+                    <td>
+                        <a class="btn btn-info" href="">On the way</a>
+                        <a class="btn btn-warning" href="">Delivered</a>
+                        <a class="btn btn-danger" href="">Cancel</a>
+
+                    </td>
 
                 </tr>
                 @endforeach
