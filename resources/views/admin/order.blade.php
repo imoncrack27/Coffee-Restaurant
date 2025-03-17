@@ -73,9 +73,9 @@
                     <td>{{ $data->delivery_status }}</td>
 
                     <td>
-                        <a class="btn btn-info" href="">On the way</a>
-                        <a class="btn btn-warning" href="">Delivered</a>
-                        <a class="btn btn-danger" href="">Cancel</a>
+                        <a class="btn btn-info" href="{{ url('on_the_way',$data->id) }}">On the way</a>
+                        <a class="btn btn-warning" href="{{ url('delivered',$data->id) }}">Delivered</a>
+                        <a class="btn btn-danger" href="{{ url('cancel',$data->id) }}">Cancel</a>
 
                     </td>
 
