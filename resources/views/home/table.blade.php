@@ -3,7 +3,7 @@
             <h2 class="section-title mb-5">BOOK A TABLE</h2>
             <div class="row mb-5">
                 <div class="col-sm-6 col-md-3 col-xs-12 my-2">
-                    <input type="email" id="booktable" class="form-control form-control-lg custom-form-control" placeholder="EMAIL">
+                    <input type="text" id="booktable" class="form-control form-control-lg custom-form-control" placeholder="Phone number">
                 </div>
                 <div class="col-sm-6 col-md-3 col-xs-12 my-2">
                     <input type="number" id="booktable" class="form-control form-control-lg custom-form-control" placeholder="NUMBER OF GUESTS" max="20" min="0">

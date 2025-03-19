@@ -14,7 +14,7 @@
                     <a class="nav-link" href="#gallary">Gallery</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#book-table">Book-Table</a>
+                    <a class="nav-link" href="#book-table">Book a Table</a>
                 </li>
             </ul>
             <a class="navbar-brand m-auto" href="#">
