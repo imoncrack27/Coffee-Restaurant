@@ -40,6 +40,9 @@ route::get('cancel/{id}', [AdminController::class, 'cancel']);
 
 route::post('/book_table', [HomeController::class, 'book_table']);
 
+route::get('/reservations', [AdminController::class, 'reservations']);
+
+
 
 
 

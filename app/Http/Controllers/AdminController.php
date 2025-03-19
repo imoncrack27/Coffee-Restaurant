@@ -121,4 +121,8 @@ class AdminController extends Controller
         $data->save();
         return redirect()->back();
     }
+    public function reservations()
+    {
+        return view('admin.reservation');
+    }
 }
