@@ -13,6 +13,11 @@ use App\Models\Order;
 
 use App\Models\Cart;
 
+use App\Models\Book;
+
+
+
+
 
 
 
@@ -154,5 +159,23 @@ class HomeController extends Controller
         return redirect()->back();
     }
 
+    public function book_table(Request $request)
+
+    {
+        $data = new Book;
+
+        $data->phone = $request->phone;
+
+        $data->guest = $request->n_guest;
+
+        $data->time = $request->time;
+
+        $data->date = $request->date;
+
+        $data->save();
+
+        return redirect()->back();
+    }
+ 
 
 }
